@@ -1,158 +1,26 @@
 # Food-Classification
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```html id="x82jfd"
+<h1 align="center">🍔 Food Classification Using Deep Learning</h1>
 
-<title>Food Classification Using Deep Learning</title>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/TensorFlow-Deep_Learning-orange?style=for-the-badge&logo=tensorflow">
+  <img src="https://img.shields.io/badge/Keras-CNN-red?style=for-the-badge&logo=keras">
+  <img src="https://img.shields.io/badge/OpenCV-Computer_Vision-green?style=for-the-badge&logo=opencv">
+  <img src="https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge&logo=flask">
+  <img src="https://img.shields.io/badge/Accuracy-97%25-success?style=for-the-badge">
+</p>
 
-<style>
+<hr>
 
-body{
-    margin:0;
-    padding:0;
-    font-family:Arial, sans-serif;
-    background:#f5f7fb;
-    color:#333;
-    line-height:1.7;
-}
-
-header{
-    background:linear-gradient(135deg,#ff6b35,#ff914d);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-
-header h1{
-    font-size:45px;
-    margin-bottom:10px;
-}
-
-.badges{
-    margin-top:20px;
-}
-
-.badge{
-    display:inline-block;
-    background:white;
-    color:#333;
-    padding:10px 18px;
-    margin:5px;
-    border-radius:30px;
-    font-size:14px;
-    font-weight:bold;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:30px 0;
-}
-
-.section{
-    background:white;
-    padding:25px;
-    margin-bottom:25px;
-    border-radius:12px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-
-.section h2{
-    color:#ff6b35;
-    border-left:6px solid #ff914d;
-    padding-left:10px;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:15px;
-}
-
-table th{
-    background:#ff6b35;
-    color:white;
-    padding:12px;
-}
-
-table td{
-    border:1px solid #ddd;
-    padding:12px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-.code{
-    background:#272822;
-    color:#f8f8f2;
-    padding:15px;
-    border-radius:10px;
-    overflow-x:auto;
-}
-
-.center{
-    text-align:center;
-}
-
-footer{
-    background:#ff6b35;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:30px;
-}
-
-img{
-    border-radius:15px;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>🍔 Food Classification Using Deep Learning</h1>
-
-<h3>Custom CNN • VGG16 • ResNet50</h3>
-
-<div class="badges">
-
-<span class="badge">Python 3.10</span>
-<span class="badge">TensorFlow</span>
-<span class="badge">Keras</span>
-<span class="badge">OpenCV</span>
-<span class="badge">Flask</span>
-<span class="badge">97% Accuracy</span>
-
-</div>
-
-<br>
-
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1400&auto=format&fit=crop" width="100%">
-
-</header>
-
-<div class="container">
-
-<div class="section">
-
-<h2>📖 About The Project</h2>
+<h2>📌 ABSTRACT</h2>
 
 <p>
-Food Classification Using Deep Learning is an AI-powered Computer Vision project that automatically identifies food categories from images using Deep Learning models.
+Food Classification Using Deep Learning is an AI-powered Computer Vision project developed to automatically identify and classify food categories from images using Deep Learning techniques.
 </p>
 
 <p>
-This project compares the performance of:
+The system was built using multiple deep learning architectures including:
 </p>
 
 <ul>
@@ -162,73 +30,51 @@ This project compares the performance of:
 </ul>
 
 <p>
-The system was trained on multiple food categories and achieved high classification accuracy using TensorFlow and Keras.
+The project performs image preprocessing, feature extraction, data augmentation, model training, and prediction using TensorFlow and Keras.
 </p>
 
-</div>
+<p>
+Among all models, ResNet50 achieved the highest accuracy with excellent classification performance.
+</p>
 
-<div class="section">
+<hr>
 
-<h2>🚀 Features</h2>
+<h2>📊 DATASET OVERVIEW</h2>
 
-<table>
+<table border="1" cellpadding="10">
 
 <tr>
+<th>Attribute</th>
+<th>Details</th>
+</tr>
 
-<td width="50%">
+<tr>
+<td>Total Classes</td>
+<td>Multiple Food Categories</td>
+</tr>
 
-<h3>🧠 Deep Learning Models</h3>
+<tr>
+<td>Image Type</td>
+<td>RGB Food Images</td>
+</tr>
 
-<ul>
-<li>Custom CNN</li>
-<li>VGG16</li>
-<li>ResNet50</li>
-</ul>
+<tr>
+<td>Task</td>
+<td>Multi-Class Image Classification</td>
+</tr>
 
-<h3>📷 Image Processing</h3>
-
-<ul>
-<li>Image resizing</li>
-<li>Normalization</li>
-<li>RGB conversion</li>
-<li>Data augmentation</li>
-</ul>
-
-</td>
-
-<td width="50%">
-
-<h3>🌐 Web Deployment</h3>
-
-<ul>
-<li>Flask integration</li>
-<li>Real-time prediction</li>
-<li>Upload food images</li>
-</ul>
-
-<h3>📊 Evaluation</h3>
-
-<ul>
-<li>Accuracy</li>
-<li>Precision</li>
-<li>Recall</li>
-<li>F1-Score</li>
-<li>Confusion Matrix</li>
-</ul>
-
-</td>
-
+<tr>
+<td>Framework</td>
+<td>TensorFlow & Keras</td>
 </tr>
 
 </table>
 
-</div>
+<hr>
 
-<div class="section">
+<h2>🍕 FOOD CATEGORIES</h2>
 
-<h2>🍕 Food Categories</h2>
-
-<table>
+<table border="1" cellpadding="10">
 
 <tr>
 <th>Indian Foods</th>
@@ -284,18 +130,66 @@ The system was trained on multiple food categories and achieved high classificat
 
 </table>
 
-</div>
+<hr>
 
-<div class="section">
+<h2>🧠 DEEP LEARNING MODELS USED</h2>
 
-<h2>⚙️ Deep Learning Workflow</h2>
+<ul>
+<li>Custom CNN</li>
+<li>VGG16</li>
+<li>ResNet50</li>
+</ul>
 
-<div class="code">
+<hr>
+
+<h2>⚙️ TECHNOLOGIES USED</h2>
+
+<h3>Programming Language</h3>
+
+<ul>
+<li>Python</li>
+</ul>
+
+<h3>Libraries</h3>
+
+<ul>
+<li>TensorFlow</li>
+<li>Keras</li>
+<li>OpenCV</li>
+<li>NumPy</li>
+<li>Pandas</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>Scikit-learn</li>
+<li>Flask</li>
+</ul>
+
+<h3>Frontend</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
+</ul>
+
+<h3>Backend</h3>
+
+<ul>
+<li>Flask</li>
+</ul>
+
+<hr>
+
+<h2>🔄 DEEP LEARNING WORKFLOW</h2>
 
 <pre>
 Food Image
      ↓
 Image Preprocessing
+     ↓
+Image Resizing
+     ↓
+Normalization
      ↓
 Data Augmentation
      ↓
@@ -306,15 +200,37 @@ Model Prediction
 Food Category Output
 </pre>
 
-</div>
+<hr>
 
-</div>
+<h2>📌 IMAGE PREPROCESSING TECHNIQUES</h2>
 
-<div class="section">
+<ul>
+<li>Image Resizing</li>
+<li>RGB Conversion</li>
+<li>Normalization</li>
+<li>Data Augmentation</li>
+<li>Noise Reduction</li>
+<li>Image Scaling</li>
+</ul>
 
-<h2>🤖 Models Performance</h2>
+<hr>
 
-<table>
+<h2>📌 DATA AUGMENTATION TECHNIQUES</h2>
+
+<ul>
+<li>Rotation</li>
+<li>Width Shift</li>
+<li>Height Shift</li>
+<li>Zoom</li>
+<li>Horizontal Flip</li>
+<li>Brightness Adjustment</li>
+</ul>
+
+<hr>
+
+<h2>📈 MODEL PERFORMANCE</h2>
+
+<table border="1" cellpadding="10">
 
 <tr>
 <th>Model</th>
@@ -342,25 +258,36 @@ Food Category Output
 
 </table>
 
-</div>
+<hr>
 
-<div class="section">
+<h2>📊 EVALUATION METRICS</h2>
 
-<h2>🛠️ Technologies Used</h2>
+<ul>
+<li>Accuracy</li>
+<li>Precision</li>
+<li>Recall</li>
+<li>F1-Score</li>
+<li>Confusion Matrix</li>
+<li>Classification Report</li>
+</ul>
 
-<div class="center">
+<hr>
 
-<img src="https://skillicons.dev/icons?i=python,tensorflow,opencv,flask,html,css,github,vscode">
+<h2>🖥️ FLASK WEB APPLICATION</h2>
 
-</div>
+<h3>Features Included</h3>
 
-</div>
+<ul>
+<li>Upload Food Images</li>
+<li>Predict Food Category</li>
+<li>Display Confidence Score</li>
+<li>User-Friendly Interface</li>
+<li>Real-Time Inference</li>
+</ul>
 
-<div class="section">
+<hr>
 
-<h2>📂 Project Structure</h2>
-
-<div class="code">
+<h2>📂 PROJECT STRUCTURE</h2>
 
 <pre>
 Food-Classification-Using-Deep-Learning/
@@ -375,65 +302,33 @@ Food-Classification-Using-Deep-Learning/
 └── README.md
 </pre>
 
-</div>
+<hr>
 
-</div>
-
-<div class="section">
-
-<h2>🌐 Flask Web Application</h2>
-
-<h3>Features Included</h3>
+<h2>💼 REAL WORLD APPLICATIONS</h2>
 
 <ul>
-<li>Upload food images</li>
-<li>Predict food category</li>
-<li>Display confidence score</li>
-<li>User-friendly interface</li>
-<li>Real-time inference</li>
+<li>Smart Restaurants</li>
+<li>Food Delivery Platforms</li>
+<li>Healthcare Systems</li>
+<li>Nutrition Monitoring</li>
+<li>AI Food Recognition</li>
 </ul>
 
-</div>
+<hr>
 
-<div class="section">
-
-<h2>🚀 Future Enhancements</h2>
+<h2>🚀 FUTURE ENHANCEMENTS</h2>
 
 <ul>
-<li>📷 Live Camera Detection</li>
-<li>🥗 Nutrition Information</li>
-<li>☁️ Cloud Deployment</li>
-<li>📱 Mobile Application</li>
-<li>🎯 YOLO Food Detection</li>
+<li>Live Camera Detection</li>
+<li>Nutrition Information</li>
+<li>Cloud Deployment</li>
+<li>Mobile Application</li>
+<li>YOLO Food Detection</li>
 </ul>
 
-</div>
+<hr>
 
-<div class="section">
-
-<h2>💼 Real World Applications</h2>
-
-<ul>
-<li>🍽️ Smart Restaurants</li>
-<li>🚚 Food Delivery Platforms</li>
-<li>🏥 Healthcare Systems</li>
-<li>📊 Nutrition Monitoring</li>
-<li>🤖 AI Food Recognition</li>
-</ul>
-
-</div>
-
-<div class="section">
-
-<h2>👨‍💻 Author</h2>
-
-<h3>Gainaboina Madhu</h3>
-
-</div>
-
-<div class="section">
-
-<h2>⭐ Conclusion</h2>
+<h2>📌 CONCLUSION</h2>
 
 <p>
 This project demonstrates how Deep Learning and Transfer Learning techniques can be used to build an accurate food image classification system.
@@ -443,16 +338,15 @@ This project demonstrates how Deep Learning and Transfer Learning techniques can
 Among all models, ResNet50 achieved the best performance with 97% accuracy, making the system suitable for real-world AI applications.
 </p>
 
-</div>
+<hr>
 
-</div>
+<h2>👨‍💻 AUTHOR</h2>
 
-<footer>
+<p><b>Gainaboina Madhu</b></p>
 
-<h2>🌟 If you found this project useful, give it a star on GitHub!</h2>
+<hr>
 
-</footer>
+<h2>⭐ GITHUB</h2>
 
-</body>
-</html>
+<p>If you found this project useful, give it a ⭐ on GitHub!</p>
 ```
